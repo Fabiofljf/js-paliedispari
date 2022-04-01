@@ -1,6 +1,25 @@
 //Esercizio 1 - Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
-// SPAZIO //ù
+//VARIABILI
+let parola_user, array_parola;
+
+//PRIMO PASSO - Chiedo all'utente di inserire una parola
+parola_user = prompt('inserisci una parola')
+
+// SECONDO PASSO - Creo una funzione per capire se la parola inserita è palindroma
+//split() - separerà ogni carattere di una stringa e lo convertirà in un array.
+//reverse() - prenderà quell’array e invertirà gli elementi al suo interno.
+//join() - si unirà ai caratteri che sono stati invertiti dalla funzione reverse().
+array_parola = [""]
+
+function split(parola_user) {
+    for (i = 0; i < parola_user.length; i++) {
+        array_parola = parola_user[i]
+        console.log(array_parola)
+    }
+}
+
+// SPAZIO //
 
 //Esercizio 2 - L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
 
